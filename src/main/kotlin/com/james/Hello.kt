@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
     h.hello()
 }
 
-class Human() { 
+class Human() {
     fun hello() {
         println("hello kotlin")
     }
