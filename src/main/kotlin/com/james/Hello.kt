@@ -5,6 +5,14 @@ fun main(args: Array<String>) {
 //    Human().hello()
     val h = Human()
     h.hello()
+
+    var age: Int = 20;
+    age = 77;
+
+    var weight: Float = 22.3F
+    val Name: String
+    Name = "James"
+
 }
 
 class Human() {
