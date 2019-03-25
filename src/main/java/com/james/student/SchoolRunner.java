@@ -5,8 +5,18 @@ import java.util.Scanner;
 public class SchoolRunner {
     public static void main(String[] args) {
 //        userInput();
-        Student_ student = new Student_("JAmes", 87, 60);
+        com.james.Student.getPass();//companion 加入 @JvmStatic可直接呼叫static參數
+        Student.pass = 60;
+        Student student = new Student("JAmes", 55, 60);
         student.print();
+        Student student2 = new Student("Jkssd", 12, 60);
+        student2.print();
+        Student student3 = new Student("Polld", 65, 60);
+        student3.print();
+
+        GraduateStudent gstu = new GraduateStudent("AAAD", 70, 56, 90);
+        gstu.print();
+
         System.out.println("Hight Score:" + student.highest());
     }
 
@@ -20,7 +30,7 @@ public class SchoolRunner {
         int math = scanner.nextInt();
 
 
-        Student_ student = new Student_(name, english, math);
+        Student student = new Student(name, english, math);
         student.print();
         System.out.println("Hight Score:" + student.highest());
     }

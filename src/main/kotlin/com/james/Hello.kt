@@ -1,6 +1,9 @@
 package com.james
 
 fun main(args: Array<String>) {
+    val student =Student("James",22,33)
+    student.grading()
+
     var s: String? = null;//加問號可處理null問題
 //    println(s!!.length);//驚嘆號
     println(s?.get(3))

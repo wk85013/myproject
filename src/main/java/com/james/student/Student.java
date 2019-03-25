@@ -2,24 +2,21 @@ package com.james.student;
 
 import java.sql.SQLOutput;
 
-public class Student_ {
+public class Student {
     String id;
     String name;
     int english;
     int math;
+    static int pass = 60;
 
-    public Student_() {
-        super();
-
-    }
-
-    public Student_(String name, int english, int math) {
+    public Student(String name, int english, int math) {//
         this.name = name;
         this.english = english;
         this.math = math;
     }
 
-    public int highest() {
+    //package-private 同一個package才能使用
+    int highest() {
         int max = 0;
         max = (english > math) ? english : math;
        /* if (english > math) {
@@ -33,7 +30,7 @@ public class Student_ {
 
     public void print() {
         int average = getAverage();
-        System.out.print(name + "\t" + english + "\t" + math + "\t" + getAverage() + "\t" + (getAverage() >= 60 ? "PASS" : "FAIL"));
+        System.out.print(name + "\t" + english + "\t" + math + "\t" + getAverage() + "\t" + (getAverage() >= pass ? "PASS" : "FAIL"));
         char grading = 'F';
         switch (average / 10) {
             case 10:

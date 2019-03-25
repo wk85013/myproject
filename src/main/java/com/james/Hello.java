@@ -1,7 +1,10 @@
 package com.james;
 
+
 public class Hello {
     public static void main(String[] args) {
+//        Student stu = new Student("James", 12, 46);
+
 //        System.out.println("Hello World");
 //        new Person().hello();
         Person p = new Person("James", 123f, 456f);
