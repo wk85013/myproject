@@ -1,4 +1,4 @@
-package com.james.guess;
+package guess;
 
 import java.util.Random;
 import java.util.Scanner;
