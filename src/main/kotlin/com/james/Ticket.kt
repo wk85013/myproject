@@ -12,10 +12,10 @@ fun main(args: Array<String>) {
 
 }
 
-//自訂義擴充原本class沒有的method
+//Extensions:自訂義擴充原本class沒有的method
 fun String.validate(): Boolean = this.length >= 6
 
-fun IntRange.random(): Int {//自訂義擴充原本class沒有的method
+fun IntRange.random(): Int {//Extensions:自訂義擴充原本class沒有的method
     val r = Random.nextInt(endInclusive - start) + start
     return r
 

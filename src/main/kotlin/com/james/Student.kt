@@ -35,7 +35,7 @@ class GraduateStudent(name: String?, english: Int, math: Int, private var thesis
 open class Student(var name: String?, var english: Int, var math: Int) {
     //加問號處理null
     companion object {   //與Java static等同概念
-        @JvmStatic//companion 加入 @JvmStatic可直接呼叫static參數
+        @JvmStatic//companion 加入 @JvmStatic可直接呼叫static參數，簡化Companion
         var pass = 60
 
         fun test() {
